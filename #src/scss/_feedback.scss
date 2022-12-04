@@ -1,0 +1,42 @@
+.feedback {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    max-width: 285px;
+    padding: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    font-family: $lora;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: $main_color;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 28px;
+  }
+
+  &__date {
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+  }
+}

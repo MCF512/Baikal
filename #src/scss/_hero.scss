@@ -1,0 +1,38 @@
+.hero {
+  padding-top: 105px;
+  padding-bottom: 50px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__wrapper {
+    max-width: 497px;
+  }
+
+  &__title {
+    display: block;
+    max-width: fit-content;
+    font-size: 131px;
+    font-weight: 700;
+    font-family: $lora;
+    color: $main-color;
+    position: relative;
+    line-height: 1;
+    margin-bottom: 40px;
+
+    &::after {
+      content: url(../img/hotel.svg);
+      position: absolute;
+      right: 0px;
+      top: -80px;
+    }
+  }
+
+  &__text {
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    margin-bottom: 40px;
+  }
+}

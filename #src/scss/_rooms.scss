@@ -1,0 +1,78 @@
+.rooms {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: url(../img/boy_bg.png);
+      position: absolute;
+      bottom: 42px;
+      left: -320px;
+    }
+
+    &::after {
+      content: url(../img/girl__bg.png);
+      position: absolute;
+      bottom: 42px;
+      right: -320px;
+    }
+  }
+
+  &__card {
+    border: 3px solid $main-color;
+    border-radius: 20px;
+    max-width: 285px;
+    padding: 40px 30px;
+    text-align: center;
+
+    ul {
+      list-style: inside;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    color: $main_color;
+    font-family: $lora;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__include {
+    color: $text_color;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__cost {
+    color: $main_color;
+    font-weight: 700;
+    font-family: $lora;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    color: $btn_color;
+    font-size: 25px;
+    font-family: $lora;
+    font-weight: 700;
+  }
+
+}
